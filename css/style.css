@@ -38,9 +38,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.grid-item span {
-    display: none;
-}
+
 .grid-item.active span {
     display: block;
 }
