@@ -1,12 +1,17 @@
+// Consegna:
 // Generare una griglia di gioco quadrata in cui ogni cella contiene un numero compreso tra 1 e 100.
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
-// Genero numeri da 1 -->100 
-const gridSize = 100;
-const gridArray = generateGridNumber(gridSize);
-// per ogni numero creo un grid-item
-const gridContainer = document.querySelector(".grid-container");
-for (let i = 0; i < gridArray.length; i++) {
+
+
+// al click del buttone play visualizzo la griglia
+document.getElementById("play").addEventListener("click", function() {
+    // Genero numeri da 1 -->100 
+    const gridSize = 100;
+    const gridArray = generateGridNumber(gridSize);
+    // per ogni numero creo un grid-item
+    const gridContainer = document.querySelector(".grid-container");
+    for (let i = 0; i < gridArray.length; i++) {
     // creo un elemento html
     const newElement = document.createElement('div')
 
@@ -22,6 +27,10 @@ for (let i = 0; i < gridArray.length; i++) {
     gridContainer.append(newElement);
 
 }
+
+})
+
+
 // functions
 
 function generateGridNumber(gridNumberQuantity) {
