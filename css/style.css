@@ -38,12 +38,15 @@ main {
     justify-content: center;
     align-items: center;
 }
+.hidden {
+    display: none;
+}
 
 .grid-item.active span {
     display: block;
 }
-.grid-item.active {
-    background-color: lightblue;
+.grid-item.clicked {
+    background-color: cornflowerblue;
 }
 
 /* Footer */

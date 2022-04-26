@@ -12,23 +12,28 @@
 
         <!-- header -->
         <header>
-            
-            <button id="play" >play</button>
+            <label for="level">Difficoltà</label>
+            <select name="level" id="level" class="level">
+                <option value="1">Easy</option>
+                <option value="2">Hard</option>
+                <option value="3">Crazy</option>
+            </select>
+            <button id="play-btn">play</button>
         </header>
         <!-- header -->
         <!-- main -->
         <main>
-            <div class="grid-container">
+            <h2 id="title">Seleziona il livello di difficoltà e genera la griglia</h2>
+            <div class="grid-container hidden" id="grid">
                 <!-- grid-item -->
-                <!-- <div class="grid-item">
+                <div class="grid-item">
                     <span>1</span>
-                </div> -->
+                </div>
             </div>
         </main>
         <!-- main -->
         <!-- footer -->
         <footer>
-
         </footer>
         <!-- footer -->
 
